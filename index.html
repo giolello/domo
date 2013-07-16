@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Domotica </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+
+<body>
+<!-- Menu -->
+<div data-role="page" id="page1">
+<div data-role="header"><h1>Domotica</h1></div>
+<div data-role="content">
+<h4>Temperatura Esterna:18.3C Interna 22.3C</h4>
+</div>
+<ul data-role="listview">
+  <li><a href="#luci" data-theme="b"><img src="images/lamp.jpg" alt="Luci" class="ui-li-icon">Luci<span class="ui-li-count">2 di 2</span></a></li>
+  <li><a href="#tapparelle" data-theme="b"><img src="images/tap.jpg" alt="Tapparelle" class="ui-li-icon">Tapparelle<span class="ui-li-count">1 di 2</span></a></li>
+</ul>
+<div data-role="footer"><h4></h4></div>
+<div data-role="content"><p>Created by Angelo Perna</p></div>
+</div>
+
+<div data-role="page" id="luci">
+<div data-role="header"><a href="index.html" data-theme="a">back</a>
+<h1>Luci</h1>
+</div>
+<div data-role="content"><form id="form1" action="invio.php" method=post data-ajax="false" >
+<table><tr><td>
+Luce Cucina
+</td><td>
+<button type="submit" class="ui-disabled" data-theme="b" name="luce1" value="up" data-inline="true" data-mini="true" data-icon="arrow-u">Acceso</button>
+<button type="submit" data-theme="c" name="luce1" value="down" data-inline="true" data-mini="true" data-icon="arrow-d">Spento</button>
+</td></tr></form></div>
+<form id="form1" action="invio.php" method=post data-ajax="false" >
+<div data-role="content"><tr><td>
+Luce Stanza da Letto
+</td><td>
+<button type="submit" data-theme="c" name="luce2" value="up" data-inline="true" data-mini="true" data-icon="arrow-u">Acceso</button>
+<button type="submit" class="ui-disabled" data-theme="a" name="luce2" value="down" data-inline="true" data-mini="true" data-icon="arrow-d">Spento</button>
+</td></tr></table></form></div>
+<div data-role="footer"><h4></h4></div>
+<div data-role="content"><p>Created by Angelo Perna</p></div>
+</div>
+
+<div data-role="page" id="tapparelle">
+<div data-role="header"><a href="index.html" data-theme="a">back</a>
+<h1>Tapparelle</h1>
+</div>
+<div data-role="content"><form id="form1" action="http://www.zanettialdo.com/domo2/invio.php" method=post data-ajax="false" >
+<table><tr><td>
+Tapparella Cucina
+</td><td>
+<button type="submit" data-theme="c" name="tap1" value="up" data-inline="true" data-mini="true" data-icon="arrow-u">Alza</button>
+<button type="submit" data-theme="c" name="tap1" value="down" data-inline="true" data-mini="true" data-icon="arrow-d">Abbassa</button>
+</td></tr></form></div>
+<form id="form1" action="invio.php" method=post data-ajax="false" >
+<div data-role="content"><tr><td>
+Tapparella Stanza da Letto
+</td><td>
+<button type="submit" data-theme="c" name="tap2" value="up" data-inline="true" data-mini="true" data-icon="arrow-u">Alza</button>
+<button type="submit" data-theme="c" name="tap2" value="down" data-inline="true" data-mini="true" data-icon="arrow-d">Abbassa</button>
+</td></tr></table></form></div>
+<div data-role="footer"><h4></h4></div>
+<div data-role="content"><p>Created by Angelo Perna</p></div>
+</div>
+
+
+
+
+
+</body>
